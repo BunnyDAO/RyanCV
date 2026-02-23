@@ -71,6 +71,39 @@ a {
   font-family: "Sora", "Plus Jakarta Sans", sans-serif;
   font-weight: 700;
   letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 30;
+}
+
+.menu-bar {
+  display: block;
+  width: 24px;
+  height: 2.5px;
+  background: var(--text);
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menu-toggle.open .menu-bar:nth-child(1) {
+  transform: translateY(7.5px) rotate(45deg);
+}
+
+.menu-toggle.open .menu-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.open .menu-bar:nth-child(3) {
+  transform: translateY(-7.5px) rotate(-45deg);
 }
 
 .site-nav {
@@ -590,30 +623,101 @@ h3 {
 
 @media (max-width: 720px) {
   .section {
-    padding: 4rem 0;
+    padding: 3.2rem 0;
+  }
+
+  .menu-toggle {
+    display: flex;
   }
 
   .site-nav {
-    overflow-x: auto;
-    scrollbar-width: none;
-    max-width: 70vw;
-    gap: 0.8rem;
+    position: fixed;
+    inset: 0;
+    z-index: 25;
+    background: rgba(246, 243, 237, 0.97);
+    backdrop-filter: blur(16px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.8rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    max-width: none;
+    overflow: visible;
   }
 
-  .site-nav::-webkit-scrollbar {
-    display: none;
+  .site-nav.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .site-nav .nav-link {
+    font-size: 1.3rem;
+    padding: 0.5rem 0;
+  }
+
+  .nav-wrap {
+    min-height: 60px;
+  }
+
+  .brand {
+    font-size: 0.95rem;
+  }
+
+  .hero {
+    padding-top: 3.5rem;
+  }
+
+  h1 {
+    font-size: clamp(1.75rem, 7vw, 2.6rem);
+  }
+
+  h2 {
+    font-size: clamp(1.4rem, 5vw, 2rem);
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .hero-card img {
+    height: 280px;
+  }
+
+  .stat-number {
+    font-size: 1.5rem;
   }
 
   .service-grid {
     grid-template-columns: 1fr;
   }
 
+  .skill-cloud {
+    gap: 0.45rem;
+  }
+
+  .skill-cloud li {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.8rem;
+  }
+
   .footer-wrap {
     flex-direction: column;
+    text-align: center;
   }
 
   .contact-card {
     padding: 1.5rem;
+  }
+
+  .cta-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cta-row .btn {
+    text-align: center;
   }
 }
 

@@ -20,6 +20,28 @@ revealItems.forEach((item, index) => {
   revealObserver.observe(item);
 });
 
+// Mobile hamburger menu
+const menuToggle = document.querySelector(".menu-toggle");
+const siteNav = document.querySelector(".site-nav");
+
+if (menuToggle && siteNav) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = menuToggle.classList.toggle("open");
+    siteNav.classList.toggle("open", isOpen);
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    document.body.style.overflow = isOpen ? "hidden" : "";
+  });
+
+  siteNav.querySelectorAll(".nav-link").forEach((link) => {
+    link.addEventListener("click", () => {
+      menuToggle.classList.remove("open");
+      siteNav.classList.remove("open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      document.body.style.overflow = "";
+    });
+  });
+}
+
 const navLinks = [...document.querySelectorAll(".nav-link")];
 const sections = navLinks
   .map((link) => document.querySelector(link.getAttribute("href")))
