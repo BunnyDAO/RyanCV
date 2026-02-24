@@ -61,12 +61,140 @@
           </div>
 
           <aside class="hero-card reveal">
-            <img
-              src="assets/images/profile.svg"
-              alt="Ryan - Wenrwa profile visual"
-              width="1072"
-              height="1270"
-            >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1072 1270" width="1072" height="1270" role="img" aria-label="Ryan - Wenrwa profile visual">
+              <style>
+                #outfit-tshirt, #outfit-space, #accessory-sunglasses {
+                  transition: opacity 0.6s ease;
+                }
+              </style>
+              <defs>
+                <filter id="sketch" x="-2%" y="-2%" width="104%" height="104%">
+                  <feTurbulence type="turbulence" baseFrequency="0.03" numOctaves="4" result="noise" seed="2"/>
+                  <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.5" xChannelSelector="R" yChannelSelector="G"/>
+                </filter>
+                <filter id="paper">
+                  <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="5" result="noise"/>
+                  <feDiffuseLighting in="noise" lighting-color="#f8f5ef" surfaceScale="2">
+                    <feDistantLight azimuth="45" elevation="60"/>
+                  </feDiffuseLighting>
+                </filter>
+              </defs>
+              <rect width="1072" height="1270" fill="#f8f5ef"/>
+              <rect width="1072" height="1270" filter="url(#paper)" opacity="0.3"/>
+              <g filter="url(#sketch)" transform="translate(536, 680)">
+                <!-- Hair -->
+                <g fill="none" stroke="#1a1a1a" stroke-linecap="round">
+                  <path d="M-115,-195 C-112,-215 -95,-248 -60,-272 C-30,-290 0,-298 0,-298 C0,-298 30,-290 60,-272 C95,-248 112,-215 115,-195" stroke-width="4.5"/>
+                  <path d="M-115,-195 C-114,-202 -112,-208 -108,-214" stroke-width="3"/>
+                  <path d="M-113,-195 C-112,-200 -110,-206 -106,-210" stroke-width="2.5"/>
+                  <path d="M115,-195 C114,-202 112,-208 108,-214" stroke-width="3"/>
+                  <path d="M113,-195 C112,-200 110,-206 106,-210" stroke-width="2.5"/>
+                  <path d="M-95,-218 C-90,-240 -82,-258 -68,-270" stroke-width="3.5"/>
+                  <path d="M-88,-215 C-84,-235 -76,-252 -62,-264" stroke-width="2.5"/>
+                  <path d="M-65,-235 C-55,-260 -42,-280 -25,-292" stroke-width="3.5"/>
+                  <path d="M-58,-232 C-48,-255 -36,-275 -18,-286" stroke-width="2.5"/>
+                  <path d="M-50,-228 C-42,-250 -30,-268 -12,-280" stroke-width="2"/>
+                  <path d="M-30,-248 C-18,-272 -5,-290 0,-298" stroke-width="3.5"/>
+                  <path d="M-22,-245 C-12,-268 0,-285 5,-292" stroke-width="2.5"/>
+                  <path d="M22,-245 C12,-268 0,-285 -5,-292" stroke-width="2.5"/>
+                  <path d="M30,-248 C18,-272 5,-290 0,-298" stroke-width="3.5"/>
+                  <path d="M65,-235 C55,-260 42,-280 25,-292" stroke-width="3.5"/>
+                  <path d="M58,-232 C48,-255 36,-275 18,-286" stroke-width="2.5"/>
+                  <path d="M50,-228 C42,-250 30,-268 12,-280" stroke-width="2"/>
+                  <path d="M95,-218 C90,-240 82,-258 68,-270" stroke-width="3.5"/>
+                  <path d="M88,-215 C84,-235 76,-252 62,-264" stroke-width="2.5"/>
+                  <path d="M-78,-225 C-65,-245 -48,-262 -30,-272" stroke-width="2"/>
+                  <path d="M78,-225 C65,-245 48,-262 30,-272" stroke-width="2"/>
+                  <path d="M-45,-230 C-30,-252 -15,-270 0,-278" stroke-width="2"/>
+                  <path d="M45,-230 C30,-252 15,-270 0,-278" stroke-width="2"/>
+                  <path d="M-70,-215 C-55,-232 -38,-248 -20,-258" stroke-width="2"/>
+                  <path d="M70,-215 C55,-232 38,-248 20,-258" stroke-width="2"/>
+                  <path d="M-15,-238 C-8,-258 -2,-274 2,-282" stroke-width="2"/>
+                  <path d="M15,-238 C8,-258 2,-274 -2,-282" stroke-width="2"/>
+                </g>
+                <!-- Face -->
+                <path d="M-115,-195 C-125,-160 -128,-120 -120,-85 C-115,-55 -100,-25 -80,5 C-60,35 -35,52 0,58 C35,52 60,35 80,5 C100,-25 115,-55 120,-85 C128,-120 125,-160 115,-195" fill="none" stroke="#1a1a1a" stroke-width="4" stroke-linecap="round"/>
+                <!-- Ears -->
+                <ellipse cx="-122" cy="-140" rx="18" ry="26" fill="none" stroke="#1a1a1a" stroke-width="3.5" stroke-linecap="round"/>
+                <path d="M-128,-155 C-133,-145 -133,-135 -128,-125" fill="none" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
+                <ellipse cx="122" cy="-140" rx="18" ry="26" fill="none" stroke="#1a1a1a" stroke-width="3.5" stroke-linecap="round"/>
+                <path d="M128,-155 C133,-145 133,-135 128,-125" fill="none" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
+                <!-- Eyes -->
+                <ellipse cx="-42" cy="-155" rx="26" ry="28" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
+                <ellipse cx="-35" cy="-163" rx="8" ry="9" fill="#f8f5ef"/>
+                <ellipse cx="-47" cy="-150" rx="3.5" ry="4" fill="#f8f5ef"/>
+                <ellipse cx="42" cy="-155" rx="26" ry="28" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
+                <ellipse cx="49" cy="-163" rx="8" ry="9" fill="#f8f5ef"/>
+                <ellipse cx="37" cy="-150" rx="3.5" ry="4" fill="#f8f5ef"/>
+                <!-- Eyebrows -->
+                <path d="M-72,-188 C-60,-196 -40,-198 -18,-192" fill="none" stroke="#1a1a1a" stroke-width="4.5" stroke-linecap="round"/>
+                <path d="M18,-192 C40,-198 60,-196 72,-188" fill="none" stroke="#1a1a1a" stroke-width="4.5" stroke-linecap="round"/>
+                <!-- Nose -->
+                <path d="M-2,-130 C-3,-118 -5,-108 -8,-98 C-10,-92 -6,-85 0,-83 C6,-85 10,-92 8,-98" fill="none" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
+                <!-- Smile -->
+                <path d="M-48,-52 C-35,-35 -15,-28 0,-26 C15,-28 35,-35 48,-52" fill="none" stroke="#1a1a1a" stroke-width="3.5" stroke-linecap="round"/>
+                <!-- Cheek blush -->
+                <g stroke="#1a1a1a" stroke-width="1.8" stroke-linecap="round" opacity="0.6">
+                  <line x1="-85" y1="-105" x2="-72" y2="-96"/><line x1="-90" y1="-100" x2="-77" y2="-91"/><line x1="-93" y1="-94" x2="-80" y2="-85"/><line x1="-88" y1="-88" x2="-75" y2="-79"/><line x1="-83" y1="-82" x2="-70" y2="-73"/>
+                </g>
+                <g stroke="#1a1a1a" stroke-width="1.8" stroke-linecap="round" opacity="0.6">
+                  <line x1="72" y1="-105" x2="85" y2="-96"/><line x1="77" y1="-100" x2="90" y2="-91"/><line x1="80" y1="-94" x2="93" y2="-85"/><line x1="75" y1="-88" x2="88" y2="-79"/><line x1="70" y1="-82" x2="83" y2="-73"/>
+                </g>
+                <!-- Neck -->
+                <path d="M-30,58 L-30,95" fill="none" stroke="#1a1a1a" stroke-width="3.5" stroke-linecap="round"/>
+                <path d="M30,58 L30,95" fill="none" stroke="#1a1a1a" stroke-width="3.5" stroke-linecap="round"/>
+
+                <!-- STATE 1: T-shirt (default) -->
+                <g id="outfit-tshirt" opacity="1">
+                  <path d="M-30,95 C-20,105 -10,110 0,112 C10,110 20,105 30,95" fill="none" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+                  <path d="M-30,95 C-50,100 -95,115 -145,145" fill="none" stroke="#1a1a1a" stroke-width="4" stroke-linecap="round"/>
+                  <path d="M30,95 C50,100 95,115 145,145" fill="none" stroke="#1a1a1a" stroke-width="4" stroke-linecap="round"/>
+                  <path d="M-145,145 C-140,160 -130,180 -120,200" fill="none" stroke="#1a1a1a" stroke-width="3.5" stroke-linecap="round"/>
+                  <path d="M145,145 C140,160 130,180 120,200" fill="none" stroke="#1a1a1a" stroke-width="3.5" stroke-linecap="round"/>
+                  <path d="M-60,130 C-40,135 -15,132 0,136" fill="none" stroke="#1a1a1a" stroke-width="1.8" stroke-linecap="round" opacity="0.35"/>
+                  <path d="M0,136 C15,132 40,135 60,130" fill="none" stroke="#1a1a1a" stroke-width="1.8" stroke-linecap="round" opacity="0.35"/>
+                  <path d="M-50,155 C-30,160 -10,156 10,160" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+                  <path d="M-10,160 C10,156 30,160 50,155" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+                </g>
+
+                <!-- STATE 2: Space suit -->
+                <g id="outfit-space" opacity="0">
+                  <ellipse cx="0" cy="-155" rx="155" ry="175" fill="none" stroke="#1a1a1a" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 4" opacity="0.5"/>
+                  <path d="M-120,-250 C-100,-280 -60,-300 -40,-290" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" opacity="0.25"/>
+                  <path d="M-110,-230 C-92,-258 -55,-275 -35,-268" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round" opacity="0.2"/>
+                  <path d="M-45,80 C-30,68 -10,62 0,60 C10,62 30,68 45,80" fill="none" stroke="#1a1a1a" stroke-width="4" stroke-linecap="round"/>
+                  <path d="M-50,85 C-30,72 -10,66 0,64 C10,66 30,72 50,85" fill="none" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+                  <path d="M-45,85 C-70,92 -115,110 -160,140" fill="none" stroke="#1a1a1a" stroke-width="4.5" stroke-linecap="round"/>
+                  <path d="M45,85 C70,92 115,110 160,140" fill="none" stroke="#1a1a1a" stroke-width="4.5" stroke-linecap="round"/>
+                  <path d="M-160,140 C-155,160 -145,185 -135,210" fill="none" stroke="#1a1a1a" stroke-width="4" stroke-linecap="round"/>
+                  <path d="M160,140 C155,160 145,185 135,210" fill="none" stroke="#1a1a1a" stroke-width="4" stroke-linecap="round"/>
+                  <rect x="-40" y="100" width="80" height="55" rx="8" fill="none" stroke="#1a1a1a" stroke-width="2.5"/>
+                  <circle cx="-18" cy="120" r="5" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+                  <circle cx="0" cy="120" r="5" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+                  <circle cx="18" cy="120" r="5" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+                  <line x1="-25" y1="138" x2="25" y2="138" stroke="#1a1a1a" stroke-width="1.5" opacity="0.4"/>
+                  <line x1="-20" y1="146" x2="20" y2="146" stroke="#1a1a1a" stroke-width="1.5" opacity="0.4"/>
+                  <circle cx="-95" cy="115" r="14" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+                  <text x="-95" y="119" text-anchor="middle" font-size="11" font-weight="700" fill="#1a1a1a" font-family="sans-serif">W</text>
+                  <circle cx="95" cy="115" r="14" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+                  <path d="M89,112 L95,105 L101,112" fill="none" stroke="#1a1a1a" stroke-width="1.8" stroke-linecap="round"/>
+                  <line x1="95" y1="105" x2="95" y2="122" stroke="#1a1a1a" stroke-width="1.8" stroke-linecap="round"/>
+                  <path d="M-70,105 C-55,120 -40,140 -35,165" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+                  <path d="M70,105 C55,120 40,140 35,165" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+                </g>
+
+                <!-- STATE 3: Sunglasses -->
+                <g id="accessory-sunglasses" opacity="0">
+                  <rect x="-72" y="-178" width="60" height="45" rx="10" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="3"/>
+                  <rect x="12" y="-178" width="60" height="45" rx="10" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="3"/>
+                  <path d="M-12,-158 C-6,-165 6,-165 12,-158" fill="none" stroke="#1a1a1a" stroke-width="3.5" stroke-linecap="round"/>
+                  <path d="M-72,-165 L-125,-158" fill="none" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+                  <path d="M72,-165 L125,-158" fill="none" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+                  <path d="M-58,-172 L-48,-168" stroke="#f8f5ef" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+                  <path d="M26,-172 L36,-168" stroke="#f8f5ef" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+                </g>
+              </g>
+            </svg>
             <div class="hero-card-content">
               <p class="hero-card-title">Background</p>
               <p>Engineer building full-stack products on Solana.</p>

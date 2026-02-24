@@ -101,3 +101,37 @@ document.addEventListener("keydown", (e) => {
     document.body.style.overflow = "";
   }
 });
+
+// Profile illustration cycling
+const outfitTshirt = document.getElementById("outfit-tshirt");
+const outfitSpace = document.getElementById("outfit-space");
+const sunglasses = document.getElementById("accessory-sunglasses");
+
+if (outfitTshirt && outfitSpace && sunglasses) {
+  const states = [
+    // State 0: Base t-shirt
+    () => {
+      outfitTshirt.setAttribute("opacity", "1");
+      outfitSpace.setAttribute("opacity", "0");
+      sunglasses.setAttribute("opacity", "0");
+    },
+    // State 1: Space suit
+    () => {
+      outfitTshirt.setAttribute("opacity", "0");
+      outfitSpace.setAttribute("opacity", "1");
+      sunglasses.setAttribute("opacity", "0");
+    },
+    // State 2: T-shirt + Sunglasses
+    () => {
+      outfitTshirt.setAttribute("opacity", "1");
+      outfitSpace.setAttribute("opacity", "0");
+      sunglasses.setAttribute("opacity", "1");
+    },
+  ];
+
+  let current = 0;
+  setInterval(() => {
+    current = (current + 1) % states.length;
+    states[current]();
+  }, 5000);
+}
