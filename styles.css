@@ -455,6 +455,7 @@ h3 {
   display: grid;
   gap: 0.85rem;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  align-items: start;
 }
 
 .gallery-item {
@@ -469,9 +470,7 @@ h3 {
 .gallery-item img {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
-  object-position: top center;
+  height: auto;
   transition: transform 0.35s ease;
 }
 
